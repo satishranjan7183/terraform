@@ -1,6 +1,3 @@
-variable "lgpipsepmap" {
-  type = map (any)
-}
 resource "azurerm_public_ip" "lgpipSep" {
   for_each = var.lgpipsepmap
   name = each.key
