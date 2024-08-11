@@ -12,3 +12,6 @@ variable "lgstrvnetmodule" {
 variable "lgsubmodule" {
   type = map(any)
 }
+variable "lgpubipmapmodule" {
+  type = map (any)
+}

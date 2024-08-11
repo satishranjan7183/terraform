@@ -26,3 +26,11 @@ lgsubmodule = {
     address_prefixes     = ["10.0.0.0/17"]
   }
 }
+
+lgpubipmapmodule = {
+  lgpubip3 = {
+  location = "canada central"
+  allocation_method = "Static"
+  resource_group_name = "lg_res_group3"
+  }
+}

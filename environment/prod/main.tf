@@ -19,3 +19,9 @@ module "lgsubmod" {
   lgsubmap   = var.lgsubmodule
   depends_on = [module.lgstrvnetmod]
 }
+module "lgpubipmodule" {
+  source = "../../module/virtual_public_ip"
+  depends_on = [ module.lgresourcegroupmodule ]
+  lgpipsepmap = var.lgpubipmapmodule
+
+}
